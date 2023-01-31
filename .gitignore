@@ -9,3 +9,4 @@ typechain-types
 cache
 artifacts
 1. obsidian
+.env.dev
