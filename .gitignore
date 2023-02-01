@@ -10,3 +10,4 @@ cache
 artifacts
 1. obsidian
 .env.dev
+hardhat.config.js

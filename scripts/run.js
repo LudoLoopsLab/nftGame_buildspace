@@ -10,7 +10,7 @@ const main = async () => {
     [100, 100, 100],                    // steam value
     "Steam-powered Oppressor", //boss Name
     "https://cdn.discordapp.com/attachments/1069719273947279431/1069797452175134750/Steam-Powered_Oppressor.png",
-    80,   // boss hp
+    1000,   // boss hp
     50      // bos attack damage
   )
   await gameContract.deployed()
@@ -18,23 +18,9 @@ const main = async () => {
 
 
   let txn
-  txn = await gameContract.mintCharacterNFT(0)
-  await txn.wait()
-  console.log("Minted NFT #1")
-
-  txn = await gameContract.mintCharacterNFT(1)
-  await txn.wait()
-  console.log("Minted NFT #2")
 
   txn = await gameContract.mintCharacterNFT(2)
   await txn.wait()
-  console.log("Minted NFT #3")
-
-  txn = await gameContract.mintCharacterNFT(1)
-  await txn.wait()
-  console.log("Minted NFT #4")
-
-
 
   txn = await gameContract.attackBoss()
   await txn.wait()
