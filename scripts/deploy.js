@@ -15,7 +15,6 @@ const main = async () => {
   )
   await gameContract.deployed()
   console.log("Contract deployed to:", gameContract.address)
-
 }
 
 const runMain = async () => {
